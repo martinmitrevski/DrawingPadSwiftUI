@@ -16,7 +16,7 @@ struct ColorPicker: View {
     
     var body: some View {
         List(colors) { colorInfo in
-            ColorEntry(colorInfo: colorInfo).tapAction {
+            ColorEntry(colorInfo: colorInfo).onTapGesture {
                 self.color = colorInfo.color
                 self.colorPickerShown = false
             }

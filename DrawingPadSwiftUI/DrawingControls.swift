@@ -36,7 +36,7 @@ struct DrawingControls: View {
                 HStack {
                     Text("Pencil width")
                         .padding()
-                    Slider(value: $lineWidth, from: 1.0, through: 15.0, by: 1.0)
+                    Slider(value: $lineWidth, in: 1.0...15.0, step: 1.0)
                         .padding()
                 }
             }
